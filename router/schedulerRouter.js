@@ -9,7 +9,7 @@ const schedule = require('node-schedule');
 const { Message } = require('../Model/message'); // Adjust the path as needed
 
 // Search API endpoint to find policy info by username (email or first_name in this case)
-router.get('/schedule-message', async (req, res) => {
+router.post('/schedule-message', async (req, res) => {
     const { message, day, time } = req.body;
 
     // Validate request body

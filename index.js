@@ -9,15 +9,6 @@ const class_name = "SERVER_FILE"
 const { initializeLogger } = require("./utilities/logger"); 
 const logger = initializeLogger();
 
-if (process.env.Environment !== "production") {
-  // add a logger logger transport
-  logger.add(
-    new winston.transports.logger({
-      format: winston.format.simple(),
-    })
-  );
-}
-
 const dotenv = require("dotenv");
 // Import required bot configuration.
 const ENV_FILE = process.env.NODE_ENV || "dev";
@@ -42,8 +33,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // MongoDB connection setup
 mongoose.connect(
-    process.env.MONGODB_STRING, 
-    { useNewUrlParser: true }
+    process.env.MONGODB_STRING 
 ).then(() => logger.info('MongoDB Connected'))
   .catch(err => logger.error('MongoDB connection error:', err));
 
@@ -61,19 +51,21 @@ app.post('/api/upload-docs', upload.single('file'), async (req, res) => {
             }
         });
 
-        worker.on('message', (message) => {
-            res.send(message);
-        });
+        // worker.on('message', (message) => {
+        //     res.send(message);
+        // });
 
         worker.on('error', (error) => {
-            res.status(500).send('Error processing file: ' + error.message);
+            logger.error('Error processing file: ' + error.message);
         });
 
         worker.on('exit', (code) => {
             if (code !== 0) {
-                res.status(500).send(`Worker stopped with exit code ${code}`);
+                logger.error(`Worker stopped with exit code ${code}`);
             }
         });
+
+        res.status(200).send(`file uploading started ..... ${`fileName: ${req?.file?.originalname}`}`)
     } catch (error) {
         res.status(500).send('Server error: ' + error.message);
         logger.error(`${class_name} - Worker thread file uploading error`,{
@@ -89,7 +81,7 @@ app.use('/api', searchRouter);
 app.use('/api', aggregateRouter);
 
 // Endpoint for scheduling a message
-app.post('/api', schedulerRouter);
+app.use('/api', schedulerRouter);
 
 // Starting the server
 app.listen(port, () => logger.info(`Server running on port ${port}`));

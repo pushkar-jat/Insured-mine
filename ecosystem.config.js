@@ -1,7 +1,7 @@
 module.exports = {
     apps : [{
       name: 'my-app',
-      script: 'script.js',
+      script: 'monitor.js',
       instances: 1,
       autorestart: true,
       watch: false,
