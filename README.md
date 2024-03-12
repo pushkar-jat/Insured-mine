@@ -17,13 +17,12 @@ This repository is a demonstration of a backend system designed for the efficien
 ## Assignments: <i id="assignments"></i>
 
 [✅] Develop the below workflow in nodejs for backend development </br>
-[✅] Created the API to upload the attached XLSX/CSV data into MongoDB. (It accomplished using worker threads)   
+[✅] Created the API to upload the attached XLSX/CSV data into MongoDB. (It accomplished using worker threads)    
 [✅] Created the Search API to find policy info with the help of the username. </br>
 [✅] Created the API to provide aggregated policy by each user.  </br>
 [✅] Implemented real-time monitoring of the Node server's CPU usage, with a system in place to restart the server upon reaching 70% utilization. This functionality is achieved through the integration of PM2 and a dedicated script that continuously checks CPU utilization, with PM2 handling the server restarts.</br>
 [✅] Created a post-api in the above server to takes the message, day, and time in body parameters and it inserts that message into DB at that particular day and time.</br>
 [✅] Centralized log monitoring system for complete application using winston</br>
-[✅] Deployed complete application using azure devops bot app service 
 
 
 
@@ -67,13 +66,15 @@ MONGODB_STRING="mongodb_connection_string"
 PORT=3000
 ```
 
-<b>2. Start backend server using pm2:</b>
+<b>2. Start your server with PM2:</b>
 ```
-pm2 start index.js
+pm2 start index.js --name="myServer"
+
 ```
-<b>2. Start pm2 service for CPU utilization and restart the server</b>
+<b>2. start your monitoring script with PM2 as well</b>
 ```
-pm2 start myServer
+pm2 start monitor.js --name="cpuMonitor"
+
 ```
 
 
@@ -83,6 +84,12 @@ pm2 start myServer
 This project doesn't use console.log anywhere, instead it uses [winston](https://www.npmjs.com/package/winston) to generate a central log file,       
 If you have used the app or tests then log file can be found here:           
 `combined.log` and  `error.log` in logs folder
+
+</br>
+
+
+## API's: <i id="api"></i>
+We added the postman api collection in api folder of the code base   
 
 </br>
  

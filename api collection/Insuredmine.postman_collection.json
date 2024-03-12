@@ -1,0 +1,389 @@
+{
+	"info": {
+		"_postman_id": "7a819990-d714-46ea-b4bb-e24358b9a284",
+		"name": "Insuredmine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21958203"
+	},
+	"item": [
+		{
+			"name": "Upload xlsx/csv files",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/upload-docs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"upload-docs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Upload xlsx/csv files",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Pushkar/Downloads/data-sheet - Node js Assesment(16884).xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/upload-docs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"upload-docs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-eEBoKLl0sLXLutK1RuPdeIiVm3I\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 14:22:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "file uploading started ..... fileName: data-sheet - Node js Assesment(16884).xlsx"
+				}
+			]
+		},
+		{
+			"name": "search policies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/search/policies?username=testUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"search",
+						"policies"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "testUser"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search policies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/search/policies?username=mbalazin@mac.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"search",
+								"policies"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "mbalazin@mac.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28120"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6dd8-3QA2XCxqTQEDVfGxf3YtmgZxe+4\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 14:20:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"65ef5ea6e509f23f6071f73b\",\n        \"policy_number\": \"YEEX9MOIBU7X\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1180.83,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-02T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-11-02T00:00:00.000Z\",\n        \"csr\": \"Tami Ellison\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d5741c0\",\n            \"company_name\": \"Integon Gen Ins Corp\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d574195\",\n            \"category_name\": \"Commercial Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Brandie Placencia\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ebee509f23f6071f742\",\n        \"policy_number\": \"7CZ3CLKWMSKH\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 2105.9,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-09T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-11-09T00:00:00.000Z\",\n        \"csr\": \"Molly Eaton\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ebfc48f525d1d576885\",\n            \"company_name\": \"Integon Ind Corp\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d574195\",\n            \"category_name\": \"Commercial Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Sol Birney\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec6e509f23f6071f749\",\n        \"policy_number\": \"ZSB972578CRV\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 2105.9,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-09T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-11-09T00:00:00.000Z\",\n        \"csr\": \"Gordon Carey\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ebfc48f525d1d576885\",\n            \"company_name\": \"Integon Ind Corp\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d574195\",\n            \"category_name\": \"Commercial Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Yee Ribble\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec6e509f23f6071f750\",\n        \"policy_number\": \"JRWJV5U5XWE4\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1323.63,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-12-31T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-06-30T00:00:00.000Z\",\n        \"csr\": \"Cliff Alvarez\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d577707\",\n            \"company_name\": \"Nationwide Prop & Cas Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Carmella Landers\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec7e509f23f6071f757\",\n        \"policy_number\": \"AUU730H3S5JU\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1323.63,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-12-31T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-06-30T00:00:00.000Z\",\n        \"csr\": \"Jan Hensley\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d577707\",\n            \"company_name\": \"Nationwide Prop & Cas Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Jared Roan\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec7e509f23f6071f75e\",\n        \"policy_number\": \"60G18LYQO157\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 729.13,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-12-07T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-06-07T00:00:00.000Z\",\n        \"csr\": \"Cara Mccoy\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d577707\",\n            \"company_name\": \"Nationwide Prop & Cas Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Victorina Ebert\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec7e509f23f6071f765\",\n        \"policy_number\": \"52W3TI0WSRYZ\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1495,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-07-05T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-07-05T00:00:00.000Z\",\n        \"csr\": \"Harley Kerr\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d577860\",\n            \"company_name\": \"Nationwide Mut Fire Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d57783c\",\n            \"category_name\": \"Homeowners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Emiko Lobo\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec7e509f23f6071f76c\",\n        \"policy_number\": \"1L4U1S4WVUS0\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 644.01,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2019-02-01T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-08-01T00:00:00.000Z\",\n        \"csr\": \"Todd Mckee\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d5778ec\",\n            \"company_name\": \"Nationwide Mut Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Xavier Hughes\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec7e509f23f6071f773\",\n        \"policy_number\": \"CNJHKXQCQVBM\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 548.38,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-14T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-05-14T00:00:00.000Z\",\n        \"csr\": \"Sherri Austin\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d5778ec\",\n            \"company_name\": \"Nationwide Mut Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Aubrey Loder\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec8e509f23f6071f77a\",\n        \"policy_number\": \"Q01S2KNCDUQR\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1264.74,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-07T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-05-07T00:00:00.000Z\",\n        \"csr\": \"Lacy Gibson\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d5778ec\",\n            \"company_name\": \"Nationwide Mut Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Dayle Mckeithan\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec8e509f23f6071f781\",\n        \"policy_number\": \"NYFOTB3O6Y29\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 719.85,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2019-01-03T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-07-03T00:00:00.000Z\",\n        \"csr\": \"Wyatt Holland\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d5778ec\",\n            \"company_name\": \"Nationwide Mut Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Lurlene Raynes\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec8e509f23f6071f788\",\n        \"policy_number\": \"BSUCYALU5J8Z\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 456.27,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-12-20T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-06-20T00:00:00.000Z\",\n        \"csr\": \"Kris Owen\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d5778ec\",\n            \"company_name\": \"Nationwide Mut Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Alton Shute\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec8e509f23f6071f78f\",\n        \"policy_number\": \"WHMGSZ30KN64\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 456.26,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-12-17T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-06-17T00:00:00.000Z\",\n        \"csr\": \"Luann Summers\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d577707\",\n            \"company_name\": \"Nationwide Prop & Cas Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Vasiliki Stiefel\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec9e509f23f6071f796\",\n        \"policy_number\": \"CKKDKK3DGNZA\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 2608.16,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-09-23T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-03-23T00:00:00.000Z\",\n        \"csr\": \"Opal Orozco\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577bcd\",\n            \"company_name\": \"Nationwide Gen Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Ignacio Lewellen\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec9e509f23f6071f79d\",\n        \"policy_number\": \"B6RZ8BO8YSS7\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 397.86,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-09-09T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-03-09T00:00:00.000Z\",\n        \"csr\": \"Bobbi Moore\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577bcd\",\n            \"company_name\": \"Nationwide Gen Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Brice Delatorre\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec9e509f23f6071f7a4\",\n        \"policy_number\": \"D096IDWOU8RT\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 361.88,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2019-03-09T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-09-09T00:00:00.000Z\",\n        \"csr\": \"Lola Yu\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577d10\",\n            \"company_name\": \"Nationwide Gen Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Leonardo Setser\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ec9e509f23f6071f7ab\",\n        \"policy_number\": \"2OQ9XHUJRSFS\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 966.72,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-17T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-05-17T00:00:00.000Z\",\n        \"csr\": \"Jesus Chase\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577d10\",\n            \"company_name\": \"Nationwide Gen Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d5776ef\",\n            \"category_name\": \"Personal Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 6,\n        \"producer\": \"Colene Dinapoli\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecae509f23f6071f7b2\",\n        \"policy_number\": \"ROAFR02ZCY6C\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 550,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-03-15T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-03-15T00:00:00.000Z\",\n        \"csr\": \"Beulah Osborne\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577dfc\",\n            \"company_name\": \"Nationwide Prop & Cas Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Shara Sayer\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecae509f23f6071f7b9\",\n        \"policy_number\": \"NHPF9USEFR11\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 500,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-04-16T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-04-16T00:00:00.000Z\",\n        \"csr\": \"Selma Arnold\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577e89\",\n            \"company_name\": \"Nationwide Mut Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577e73\",\n            \"category_name\": \"General Liability\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Mica Maly\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecae509f23f6071f7c0\",\n        \"policy_number\": \"KD5RNWNTUP5O\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 500,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-04-29T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-04-29T00:00:00.000Z\",\n        \"csr\": \"Clint Garza\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d577860\",\n            \"company_name\": \"Nationwide Mut Fire Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577e73\",\n            \"category_name\": \"General Liability\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Roy Dries\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecae509f23f6071f7c7\",\n        \"policy_number\": \"GDKBJ7KTNBOQ\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 5572,\n        \"policy_type\": \"Package\",\n        \"policy_start_date\": \"2018-07-01T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-07-01T00:00:00.000Z\",\n        \"csr\": \"Simone Sharp\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577e89\",\n            \"company_name\": \"Nationwide Mut Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577fbd\",\n            \"category_name\": \"Commercial Package\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Quinton Spece\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecbe509f23f6071f7ce\",\n        \"policy_number\": \"JGWPSEJ1IBP8\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1659,\n        \"policy_type\": \"Package\",\n        \"policy_start_date\": \"2018-07-11T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-07-11T00:00:00.000Z\",\n        \"csr\": \"Leslie Prince\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d577860\",\n            \"company_name\": \"Nationwide Mut Fire Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577fbd\",\n            \"category_name\": \"Commercial Package\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Lucius Mease\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecbe509f23f6071f7d5\",\n        \"policy_number\": \"LKFGKKC4TNF2\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1300,\n        \"policy_type\": \"Package\",\n        \"policy_start_date\": \"2018-07-15T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-07-15T00:00:00.000Z\",\n        \"csr\": \"Jaime Meadows\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577e89\",\n            \"company_name\": \"Nationwide Mut Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577fbd\",\n            \"category_name\": \"Commercial Package\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Irvin Cline\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecbe509f23f6071f7dc\",\n        \"policy_number\": \"F9Y8F44TGVEY\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1300,\n        \"policy_type\": \"Package\",\n        \"policy_start_date\": \"2018-07-15T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-07-15T00:00:00.000Z\",\n        \"csr\": \"Lisa Palmer\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d5778ec\",\n            \"company_name\": \"Nationwide Mut Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577fbd\",\n            \"category_name\": \"Commercial Package\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Annalisa Rendon\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecbe509f23f6071f7e3\",\n        \"policy_number\": \"N2K7NLBK9TDL\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1300,\n        \"policy_type\": \"Package\",\n        \"policy_start_date\": \"2018-07-15T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-07-15T00:00:00.000Z\",\n        \"csr\": \"Kent Weber\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d5778ec\",\n            \"company_name\": \"Nationwide Mut Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577fbd\",\n            \"category_name\": \"Commercial Package\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Emmaline Ceja\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecbe509f23f6071f7ea\",\n        \"policy_number\": \"JCILJ3W9IH24\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1314,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-09-26T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-09-26T00:00:00.000Z\",\n        \"csr\": \"Kenny Raymond\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d577860\",\n            \"company_name\": \"Nationwide Mut Fire Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Fransisca Mach\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecce509f23f6071f7f1\",\n        \"policy_number\": \"2V87CPTIUCLZ\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 2640,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-01T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-11-01T00:00:00.000Z\",\n        \"csr\": \"Dustin Lowe\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577e89\",\n            \"company_name\": \"Nationwide Mut Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Carlos Ericsson\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecce509f23f6071f7f8\",\n        \"policy_number\": \"42P25V2P1KKK\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 550,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-25T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-11-25T00:00:00.000Z\",\n        \"csr\": \"Maggie Gilbert\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecdc48f525d1d5783bc\",\n            \"company_name\": \"Nationwide Mut Fire Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Hoyt Pressler\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecce509f23f6071f7ff\",\n        \"policy_number\": \"TEPEHNBS1NBH\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 9013.42,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-12-17T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-12-17T00:00:00.000Z\",\n        \"csr\": \"Deann Greer\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecdc48f525d1d5783bc\",\n            \"company_name\": \"Nationwide Mut Fire Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d574195\",\n            \"category_name\": \"Commercial Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Alayna Meekins\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecce509f23f6071f806\",\n        \"policy_number\": \"4FRQLMHLYH80\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 4490.78,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2019-01-01T00:00:00.000Z\",\n        \"policy_end_date\": \"2020-01-01T00:00:00.000Z\",\n        \"csr\": \"Dirk Newton\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecdc48f525d1d5783bc\",\n            \"company_name\": \"Nationwide Mut Fire Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d574195\",\n            \"category_name\": \"Commercial Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Cindi Paschall\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecde509f23f6071f80d\",\n        \"policy_number\": \"WD241AGZ21GV\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 5092,\n        \"policy_type\": \"Package\",\n        \"policy_start_date\": \"2019-01-06T00:00:00.000Z\",\n        \"policy_end_date\": \"2020-01-06T00:00:00.000Z\",\n        \"csr\": \"Korey Romero\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d5778ec\",\n            \"company_name\": \"Nationwide Mut Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577fbd\",\n            \"category_name\": \"Commercial Package\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Tennille Brinkerhoff\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecde509f23f6071f814\",\n        \"policy_number\": \"P5HKUJ6FVG8O\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 550,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2019-03-15T00:00:00.000Z\",\n        \"policy_end_date\": \"2020-03-15T00:00:00.000Z\",\n        \"csr\": \"Adrian Roy\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d577707\",\n            \"company_name\": \"Nationwide Prop & Cas Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Crista Manuel\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecde509f23f6071f81b\",\n        \"policy_number\": \"0NCWVVZI5BGM\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1207,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-05-20T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-05-20T00:00:00.000Z\",\n        \"csr\": \"Erwin Barker\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577e89\",\n            \"company_name\": \"Nationwide Mut Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Justine Hockenberry\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecde509f23f6071f822\",\n        \"policy_number\": \"LNEDZT7JSC6R\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1356,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-06-12T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-06-12T00:00:00.000Z\",\n        \"csr\": \"Delmer Byrd\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d577860\",\n            \"company_name\": \"Nationwide Mut Fire Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Felicidad Krahn\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecee509f23f6071f829\",\n        \"policy_number\": \"K23IH8ZRXEH0\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 614,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-09-03T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-09-03T00:00:00.000Z\",\n        \"csr\": \"Kenton Curtis\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577e89\",\n            \"company_name\": \"Nationwide Mut Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Anita Vanderbilt\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecee509f23f6071f830\",\n        \"policy_number\": \"K9XGPICL9FAA\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 222,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-09-28T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-09-28T00:00:00.000Z\",\n        \"csr\": \"Randy Moss\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecfc48f525d1d578778\",\n            \"company_name\": \"Nationwide Ins Co Of Amer\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d574195\",\n            \"category_name\": \"Commercial Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Zaida Densmore\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecee509f23f6071f837\",\n        \"policy_number\": \"R5QY8YLJ4VJK\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 550,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2019-01-17T00:00:00.000Z\",\n        \"policy_end_date\": \"2020-01-17T00:00:00.000Z\",\n        \"csr\": \"Reuben Stokes\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecdc48f525d1d5783bc\",\n            \"company_name\": \"Nationwide Mut Fire Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Weston Ellinger\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecee509f23f6071f83e\",\n        \"policy_number\": \"YFKCVXYHUBUT\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 2168,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-08-30T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-08-30T00:00:00.000Z\",\n        \"csr\": \"Donnie Key\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec8c48f525d1d577860\",\n            \"company_name\": \"Nationwide Mut Fire Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Isabell Nourse\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecee509f23f6071f845\",\n        \"policy_number\": \"Z1VWMJOBPNZP\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 2586,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-12-29T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-12-29T00:00:00.000Z\",\n        \"csr\": \"Richie Young\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d577707\",\n            \"company_name\": \"Nationwide Prop & Cas Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Karly Curran\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecfe509f23f6071f84c\",\n        \"policy_number\": \"BP5GI0GINGIW\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1431,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-06-10T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-06-10T00:00:00.000Z\",\n        \"csr\": \"Troy Norton\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577e89\",\n            \"company_name\": \"Nationwide Mut Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Galina Donelan\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecfe509f23f6071f853\",\n        \"policy_number\": \"Z8N38E4MX5Y3\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 5850,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2019-01-13T00:00:00.000Z\",\n        \"policy_end_date\": \"2020-01-13T00:00:00.000Z\",\n        \"csr\": \"Burton Stanley\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ec7c48f525d1d577707\",\n            \"company_name\": \"Nationwide Prop & Cas Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Elly Paolucci\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecfe509f23f6071f85a\",\n        \"policy_number\": \"CDIS6GASZMNH\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 965,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-03-01T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-03-01T00:00:00.000Z\",\n        \"csr\": \"Rick Kramer\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577bcd\",\n            \"company_name\": \"Nationwide Gen Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Deandre Prude\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ecfe509f23f6071f861\",\n        \"policy_number\": \"3S7CEC2UT9IT\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 2563,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-03-06T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-03-06T00:00:00.000Z\",\n        \"csr\": \"Scott Chang\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577bcd\",\n            \"company_name\": \"Nationwide Gen Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Mercedes Borda\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ed0e509f23f6071f868\",\n        \"policy_number\": \"ZM8WTLIDLA8V\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1599,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-06-29T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-06-29T00:00:00.000Z\",\n        \"csr\": \"Maria Patton\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577bcd\",\n            \"company_name\": \"Nationwide Gen Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Matilde Ingraham\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ed0e509f23f6071f86f\",\n        \"policy_number\": \"QMSCC1UTR5I2\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1524,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-06-30T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-06-30T00:00:00.000Z\",\n        \"csr\": \"Loren Buckley\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577bcd\",\n            \"company_name\": \"Nationwide Gen Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Marquita Muldowney\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ed0e509f23f6071f876\",\n        \"policy_number\": \"12Z7FKDUYXQH\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1613,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-07-06T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-07-06T00:00:00.000Z\",\n        \"csr\": \"Kory Vazquez\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577bcd\",\n            \"company_name\": \"Nationwide Gen Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Rosette Lucia\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ed0e509f23f6071f87d\",\n        \"policy_number\": \"WPTAOS6MLKJ0\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 737,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-06-01T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-06-01T00:00:00.000Z\",\n        \"csr\": \"Rupert Petty\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577bcd\",\n            \"company_name\": \"Nationwide Gen Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Vivienne Rulison\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ed1e509f23f6071f884\",\n        \"policy_number\": \"XBDFHM8QNBDV\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 737,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-06-01T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-06-01T00:00:00.000Z\",\n        \"csr\": \"Darcy Brown\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577bcd\",\n            \"company_name\": \"Nationwide Gen Ins Co\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Rosalee Gilford\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef5ed1e509f23f6071f88b\",\n        \"policy_number\": \"FWT9S409EUMZ\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 2682,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-10-23T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-10-23T00:00:00.000Z\",\n        \"csr\": \"Fay Herring\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ecac48f525d1d577d10\",\n            \"company_name\": \"Nationwide Gen Ins Co_Copy\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ecbc48f525d1d577ddf\",\n            \"category_name\": \"Business Owners\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Alfredo Condit\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef62b54bdda4e6545aea26\",\n        \"policy_number\": \"YEEX9MOIBU7X\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1180.83,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-02T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-11-02T00:00:00.000Z\",\n        \"csr\": \"Tami Ellison\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d5741c0\",\n            \"company_name\": \"Integon Gen Ins Corp\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d574195\",\n            \"category_name\": \"Commercial Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Brandie Placencia\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef62b54bdda4e6545aea2d\",\n        \"policy_number\": \"7CZ3CLKWMSKH\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 2105.9,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-09T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-11-09T00:00:00.000Z\",\n        \"csr\": \"Molly Eaton\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ebfc48f525d1d576885\",\n            \"company_name\": \"Integon Ind Corp\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d574195\",\n            \"category_name\": \"Commercial Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Sol Birney\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef646c3c17e09dcc0a3157\",\n        \"policy_number\": \"YEEX9MOIBU7X\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 1180.83,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-02T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-11-02T00:00:00.000Z\",\n        \"csr\": \"Tami Ellison\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d5741c0\",\n            \"company_name\": \"Integon Gen Ins Corp\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d574195\",\n            \"category_name\": \"Commercial Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Brandie Placencia\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ef646c3c17e09dcc0a315e\",\n        \"policy_number\": \"7CZ3CLKWMSKH\",\n        \"premium_amount_written\": 0,\n        \"premium_amount\": 2105.9,\n        \"policy_type\": \"Single\",\n        \"policy_start_date\": \"2018-11-09T00:00:00.000Z\",\n        \"policy_end_date\": \"2019-11-09T00:00:00.000Z\",\n        \"csr\": \"Molly Eaton\",\n        \"user_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"carrier_id\": {\n            \"_id\": \"65ef5ebfc48f525d1d576885\",\n            \"company_name\": \"Integon Ind Corp\",\n            \"__v\": 0\n        },\n        \"category_id\": {\n            \"_id\": \"65ef5ea7c48f525d1d574195\",\n            \"category_name\": \"Commercial Auto\",\n            \"__v\": 0\n        },\n        \"policy_mode\": 12,\n        \"producer\": \"Sol Birney\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get aggregate policies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/aggregate/policies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"aggregate",
+						"policies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get aggregate policies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/aggregate/policies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"aggregate",
+								"policies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "138"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8a-svSV4biVjVeyyDH90up5zWzt3fM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 14:08:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"65ef5ea1c48f525d1d5738da\",\n        \"totalPolicies\": 53,\n        \"totalPremium\": 89996.81,\n        \"userName\": \"Torie Buchanan\",\n        \"userEmail\": \"mbalazin@mac.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "schedule message api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"message\": \"Hello, future!\",\r\n  \"day\": \"2024-03-12\",\r\n  \"time\": \"19:35\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/schedule-message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"schedule-message"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "schedule message api",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"message\": \"Hello, future!\",\r\n  \"day\": \"2024-03-12\",\r\n  \"time\": \"19:35\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/schedule-message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"schedule-message"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-nonXJivY4DRYs9ng+YGp1qxctI8\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 14:09:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Message scheduled successfully"
+				}
+			]
+		}
+	]
+}
