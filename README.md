@@ -44,11 +44,9 @@ Policy Category (LOB): Manages different categories of insurance policies.
 Policy Carrier: Stores information about policy carriers.
 
 Policy Info: Holds comprehensive policy details including policy number, policy start and end dates, policy category, collection id, company collection id, and user id.
-
+```
 ![Database Diagram](images/dbdiagram.png "Database Diagram")
 
-
-```
 </br>
 
 
