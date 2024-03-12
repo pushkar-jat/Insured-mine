@@ -17,7 +17,7 @@ This repository is a demonstration of a backend system designed for the efficien
 ## Assignments: <i id="assignments"></i>
 
 [✅] Develop the below workflow in nodejs for backend development </br>
-[✅] Created the API to upload the attached XLSX/CSV data into MongoDB. (It accomplished using worker threads) </br>      
+[✅] Created the API to upload the attached XLSX/CSV data into MongoDB. (It accomplished using worker threads)   
 [✅] Created the Search API to find policy info with the help of the username. </br>
 [✅] Created the API to provide aggregated policy by each user.  </br>
 [✅] Implemented real-time monitoring of the Node server's CPU usage, with a system in place to restart the server upon reaching 70% utilization. This functionality is achieved through the integration of PM2 and a dedicated script that continuously checks CPU utilization, with PM2 handling the server restarts.</br>
@@ -45,6 +45,9 @@ Policy Category (LOB): Manages different categories of insurance policies.
 Policy Carrier: Stores information about policy carriers.
 
 Policy Info: Holds comprehensive policy details including policy number, policy start and end dates, policy category, collection id, company collection id, and user id.
+
+![Database Diagram](images/dbdiagram.png "Database Diagram")
+
 
 ```
 </br>
