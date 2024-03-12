@@ -16,13 +16,13 @@ This repository is a demonstration of a backend system designed for the efficien
 
 ## Assignments: <i id="assignments"></i>
 
-[✅] Develop the below workflow in nodejs for backend development
-[✅] Created the API to upload the attached XLSX/CSV data into MongoDB. (It accomplished using worker threads)       
-[✅] Created the Search API to find policy info with the help of the username. 
-[✅] Created the API to provide aggregated policy by each user.  
-[✅] Implemented real-time monitoring of the Node server's CPU usage, with a system in place to restart the server upon reaching 70% utilization. This functionality is achieved through the integration of PM2 and a dedicated script that continuously checks CPU utilization, with PM2 handling the server restarts.
-[✅] Created a post-api in the above server to takes the message, day, and time in body parameters and it inserts that message into DB at that particular day and time.
-[✅] Centralized log monitoring system for complete application using winston
+[✅] Develop the below workflow in nodejs for backend development </br>
+[✅] Created the API to upload the attached XLSX/CSV data into MongoDB. (It accomplished using worker threads) </br>      
+[✅] Created the Search API to find policy info with the help of the username. </br>
+[✅] Created the API to provide aggregated policy by each user.  </br>
+[✅] Implemented real-time monitoring of the Node server's CPU usage, with a system in place to restart the server upon reaching 70% utilization. This functionality is achieved through the integration of PM2 and a dedicated script that continuously checks CPU utilization, with PM2 handling the server restarts.</br>
+[✅] Created a post-api in the above server to takes the message, day, and time in body parameters and it inserts that message into DB at that particular day and time.</br>
+[✅] Centralized log monitoring system for complete application using winston</br>
 [✅] Deployed complete application using azure devops bot app service 
 
 
